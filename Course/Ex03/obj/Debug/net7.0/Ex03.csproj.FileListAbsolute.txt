@@ -1,0 +1,15 @@
+C:\Users\Faber\Documents\Projetos\Course\Ex03\bin\Debug\net7.0\Ex03.exe
+C:\Users\Faber\Documents\Projetos\Course\Ex03\bin\Debug\net7.0\Ex03.deps.json
+C:\Users\Faber\Documents\Projetos\Course\Ex03\bin\Debug\net7.0\Ex03.runtimeconfig.json
+C:\Users\Faber\Documents\Projetos\Course\Ex03\bin\Debug\net7.0\Ex03.dll
+C:\Users\Faber\Documents\Projetos\Course\Ex03\bin\Debug\net7.0\Ex03.pdb
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.csproj.AssemblyReference.cache
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.AssemblyInfoInputs.cache
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.AssemblyInfo.cs
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.csproj.CoreCompileInputs.cache
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.dll
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\refint\Ex03.dll
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.pdb
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\Ex03.genruntimeconfig.cache
+C:\Users\Faber\Documents\Projetos\Course\Ex03\obj\Debug\net7.0\ref\Ex03.dll
