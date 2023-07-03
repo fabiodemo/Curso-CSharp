@@ -39,26 +39,56 @@ namespace ClassesAtributosMetodos
 
             // ---------------------------------------------------------
 
-            Triangulo x, y;
-            x = new Triangulo();
-            y = new Triangulo();
+            //Triangulo x, y;
+            //x = new Triangulo();
+            //y = new Triangulo();
+
+            //Console.WriteLine("Digite as medidas do triângulo X:");
+            //x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //double p = (x.A + x.B + x.C) / 2;
+            //double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+
+
+
+            //Console.WriteLine("Digite as medidas do triângulo X:");
+            //y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //p = (y.A + y.B + y.C) / 2;
+            //double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+
+            //Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            //Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+            //if (areaX > areaY)
+            //{
+            //    Console.WriteLine("maior área: X");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("maior área: Y");
+            //}
+
+            // ---------------------------------------------------------
+
+            Triangulo x = new Triangulo();
+            Triangulo y = new Triangulo();
 
             Console.WriteLine("Digite as medidas do triângulo X:");
             x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            double p = (x.A + x.B + x.C) / 2;
-            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
-
-
 
             Console.WriteLine("Digite as medidas do triângulo X:");
             y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            p = (y.A + y.B + y.C) / 2;
-            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
-            
+
+            double areaX = x.Area();
+
+            double areaY = y.Area();
+
             Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
             Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
             if (areaX > areaY)
