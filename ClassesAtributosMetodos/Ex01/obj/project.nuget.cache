@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nK7JkANFXyQXHc1wjD8MD9sbDT2NaKdsq5Ti7tU8WmLL8QnwmYTU+hS2s7exCIP11mHOT+6RdXIba82YtVBW8Q==",
+  "dgSpecHash": "b5/+w62bGATNUuQlIRgLc/WvgGu2jAmFe9F6xcZPPXQqWGLa2j5iN5lokglEQTWL9mCa2ZN9LqOanducSUZQ7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Faber\\Documents\\Projetos\\ClassesAtributosMetodos\\Ex01\\Ex01.csproj",
+  "projectFilePath": "/home/fabio/Documents/Github/Curso-CSharp/ClassesAtributosMetodos/Ex01/Ex01.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
