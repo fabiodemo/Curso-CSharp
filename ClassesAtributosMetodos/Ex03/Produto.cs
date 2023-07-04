@@ -22,14 +22,14 @@ namespace Ex03
             return $"Dados do produto: {Nome}, $ {Preco}, {Quant} unidades, Total: $ {(ValorTotalEmEstoque()).ToString("F2", CultureInfo.InvariantCulture)}";
         }
 
-        public void AdicionarProdutos(int quantity)
+        public void AdicionarProdutos(int quant)
         {
-            Quant += quantity;
+            Quant += quant;
         }
 
-        public void RemoverProdutos(int quantity)
+        public void RemoverProdutos(int quant)
         {
-            Quant -= quantity;
+            Quant -= quant;
         }
     }
 }
