@@ -20,11 +20,13 @@ class Program
 
         Console.Write("Digite o número de produtos a serem adicionados ao estoque: ");
         produto.AdicionarProdutos(int.Parse(Console.ReadLine()));
-        Console.WriteLine($"Dados do produto: {produto.Nome}, $ {produto.Preco}, {produto.Quant} unidades, Total: $ {(produto.ValorTotalEmEstoque()).ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine(produto);
+        // Console.WriteLine($"Dados do produto: {produto.Nome}, $ {produto.Preco}, {produto.Quant} unidades, Total: $ {(produto.ValorTotalEmEstoque()).ToString("F2", CultureInfo.InvariantCulture)}");
 
         Console.Write("Digite o número de produtos a serem removidos do estoque: ");
         produto.RemoverProdutos(int.Parse(Console.ReadLine()));
-        Console.WriteLine($"Dados do produto: {produto.Nome}, $ {produto.Preco}, {produto.Quant} unidades, Total: $ {(produto.ValorTotalEmEstoque()).ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine(produto);
+        // Console.WriteLine($"Dados do produto: {produto.Nome}, $ {produto.Preco}, {produto.Quant} unidades, Total: $ {(produto.ValorTotalEmEstoque()).ToString("F2", CultureInfo.InvariantCulture)}");
 
     }
 }

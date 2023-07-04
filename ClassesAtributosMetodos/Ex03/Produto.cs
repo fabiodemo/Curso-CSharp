@@ -14,6 +14,14 @@ namespace Ex03
         {
             return Preco * Quant;
         }
+
+        public override string ToString()
+        {
+            // return Nome + ", $" + Preco;
+            // return $"{Nome}, ${Preco}";
+            return $"Dados do produto: {Nome}, $ {Preco}, {Quant} unidades, Total: $ {(ValorTotalEmEstoque()).ToString("F2", CultureInfo.InvariantCulture)}";
+        }
+
         public void AdicionarProdutos(int quantity)
         {
             Quant += quantity;
