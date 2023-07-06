@@ -12,23 +12,35 @@ namespace Ex06
     {
         public string Nome;
         public double[] Notas = new double[3];
-        public double NotaFinal;
 
 
-        public void CalculaNotaFinal()
+        public double NotaFinal()
         {
-            foreach (int i in Notas)
+            double soma = 0;
+            foreach (double nota in Notas)
             {
-                NotaFinal += i;
+                soma += nota;
             }
+            return soma;
         }
 
-        public string Resultado()
+        //public string Resultado()
+        //{
+        //    if (NotaFinal >= 60.0) {
+        //        return "APROVADO";
+        //    }
+        //    return $"REPROVADO\r\nFALTARAM {(60 - NotaFinal).ToString("F2", CultureInfo.InvariantCulture)} PONTOS";
+        //}
+
+        public bool Aprovado()
         {
-            if (NotaFinal >= 60.0) {
-                return "APROVADO";
-            }
-            return $"REPROVADO\r\nFALTARAM {(60 - NotaFinal).ToString("F2", CultureInfo.InvariantCulture)} PONTOS";
+            return NotaFinal() >= 60;
+        }
+
+        public double NotaRestante()
+        {
+            double notaFinal = NotaFinal();
+            return notaFinal >= 60.0 ? 0.0 : 60.0 - NotaFinal();
         }
 
     }

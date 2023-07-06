@@ -19,8 +19,8 @@ class Program
         {
             aluno.Notas[i] = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
         }
-        aluno.CalculaNotaFinal();
-        Console.WriteLine($"NOTA FINAL = {aluno.NotaFinal.ToString("F2", CultureInfo.InvariantCulture)}");
-        Console.WriteLine($"{aluno.Resultado()}");
+        Console.WriteLine($"NOTA FINAL = {aluno.NotaFinal().ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"{(aluno.Aprovado() ? "APROVADO" : "REPROVADO")}");
+        if (!aluno.Aprovado()) Console.WriteLine($"FALTARAM {aluno.NotaRestante().ToString("F2", CultureInfo.InvariantCulture)} PONTOS");
     }
 }
