@@ -13,9 +13,9 @@ class Program
     {
         Aluno aluno = new Aluno();
         Console.Write("Nome do aluno: ");
-        Console.ReadLine();
+        aluno.Nome = Console.ReadLine();
         Console.Write("Digite as três notas do aluno: ");
-        for (int i = 0;i < 3;i++) 
+        for (int i = 0; i < 3; i++) 
         {
             aluno.Notas[i] = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
         }
