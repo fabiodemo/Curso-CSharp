@@ -22,12 +22,12 @@ class Program
         Console.Write("Imposto: ");
         func.Imposto = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-        Console.WriteLine($"Funcionário: {func.Nome}, $ {func.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Funcionário: {func}");
 
         Console.Write("Digite a porcentagem para aumentar o salário: ");
         func.AumentarSalario(Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
 
-        Console.WriteLine($"Dados atualizados: {func.Nome}, $ {func.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Dados atualizados: {func}");
 
     }
 }
