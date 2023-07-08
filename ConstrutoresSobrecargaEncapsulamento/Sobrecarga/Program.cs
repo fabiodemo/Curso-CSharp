@@ -17,6 +17,16 @@ namespace Sobrecarga
 
             Produto p = new Produto(nome, preco);
 
+            Produto p2 = new Produto();
+
+            // Essa sintaxe funciona mesmo sem construtores, porém se houverem construtores ela deve que seguir o padrão dos mesmos
+            Produto p3 = new Produto
+            {
+                Nome = "TV",
+                Preco = 500.00,
+                Quantidade = 20
+            };
+
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);
 
