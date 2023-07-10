@@ -6,7 +6,6 @@ namespace Properties
     {
         static void Main(string[] args)
         {
-            /*
             // Properties
             Produto p = new Produto("tv", 500.0, 10);
 
@@ -18,9 +17,6 @@ namespace Properties
             p.Nome = "T";
             Console.WriteLine(p.Nome);
             //p.Preco = 20.00; // Erro, pois só teremos o get nesse caso
-            */
-
-            // Auto Properties
         }
     }
 }
