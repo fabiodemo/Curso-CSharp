@@ -6,10 +6,7 @@ namespace Nullable
     {
         static void Main(string[] args)
         {
-            Point p = new Point;
-            p.X = 10;
-            p.Y = 10;
-            Console.WriteLine(p);
+            double x = null;
         }
     }
 }
