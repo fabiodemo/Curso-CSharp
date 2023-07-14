@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01", "..\Ex01\Ex01.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params", "..\Params\Params.csproj", "{18DB91A5-7A9E-4238-8049-21ADA1925756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificadorRef", "..\ModificadorRef\ModificadorRef.csproj", "{6F1C2210-F51A-49AE-BE14-ABA5DA744610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1C2210-F51A-49AE-BE14-ABA5DA744610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1C2210-F51A-49AE-BE14-ABA5DA744610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1C2210-F51A-49AE-BE14-ABA5DA744610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1C2210-F51A-49AE-BE14-ABA5DA744610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
