@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vetor", "..\Vetor\Vetor.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01", "..\Ex01\Ex01.csproj", "{C8172562-D021-496E-849C-92EAC72A21BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params", "..\Params\Params.csproj", "{18DB91A5-7A9E-4238-8049-21ADA1925756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C8172562-D021-496E-849C-92EAC72A21BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8172562-D021-496E-849C-92EAC72A21BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8172562-D021-496E-849C-92EAC72A21BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18DB91A5-7A9E-4238-8049-21ADA1925756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
