@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nullable", "..\Nullable\Nul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vetor", "..\Vetor\Vetor.csproj", "{42BA27F9-4B33-447C-9BE8-1CE7C074385C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01", "..\Ex01\Ex01.csproj", "{C8172562-D021-496E-849C-92EAC72A21BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex01", "..\Ex01\Ex01.csproj", "{C8172562-D021-496E-849C-92EAC72A21BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params", "..\Params\Params.csproj", "{18DB91A5-7A9E-4238-8049-21ADA1925756}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Params", "..\Params\Params.csproj", "{18DB91A5-7A9E-4238-8049-21ADA1925756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificadorRef", "..\ModificadorRef\ModificadorRef.csproj", "{6F1C2210-F51A-49AE-BE14-ABA5DA744610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModificadorRef", "..\ModificadorRef\ModificadorRef.csproj", "{6F1C2210-F51A-49AE-BE14-ABA5DA744610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreach", "..\Foreach\Foreach.csproj", "{7F336E82-6B1C-4BC3-B890-67B8874031A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foreach", "..\Foreach\Foreach.csproj", "{7F336E82-6B1C-4BC3-B890-67B8874031A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "..\List\List.csproj", "{4B275C90-FE6B-43E0-8A63-7D193300ACF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{7F336E82-6B1C-4BC3-B890-67B8874031A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F336E82-6B1C-4BC3-B890-67B8874031A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F336E82-6B1C-4BC3-B890-67B8874031A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B275C90-FE6B-43E0-8A63-7D193300ACF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B275C90-FE6B-43E0-8A63-7D193300ACF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B275C90-FE6B-43E0-8A63-7D193300ACF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B275C90-FE6B-43E0-8A63-7D193300ACF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
