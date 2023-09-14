@@ -20,6 +20,9 @@ namespace _6_timespan
             Console.WriteLine(t5);
 
             Console.WriteLine(TimeSpan.FromDays(1.5));
+            Console.WriteLine(TimeSpan.FromMilliseconds(1.5));
+            Console.WriteLine(TimeSpan.FromTicks(90000000L));
+
 
         }
     }
