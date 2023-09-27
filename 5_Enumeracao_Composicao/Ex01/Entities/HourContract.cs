@@ -20,5 +20,10 @@ namespace Ex01Composition.Entities
             ValuePerHour = valuePerHour;
             Hours = hours;
         }
+
+        public double TotalValue()
+        {
+            return Hours * ValuePerHour;
+        }
     }
 }
