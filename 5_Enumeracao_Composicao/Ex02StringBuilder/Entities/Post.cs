@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Text; // Necessário para o StringBuilder
 using System.Threading.Tasks;
 
 namespace Ex02StringBuilder.Entities
@@ -22,6 +22,31 @@ namespace Ex02StringBuilder.Entities
             Title = title;
             Content = content;
             Likes = likes;
+        }
+
+        public void AddComment(Comment comment)
+        { 
+            Comments.Add(comment);
+        }
+
+        public void RemoveComment(Comment comment)
+        {
+            Comments.Remove(comment);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(Title);
+            sb.AppendLine($"{Likes} likes - {Moment}");
+            sb.AppendLine(Content);
+            sb.AppendLine("Comments: ");
+            foreach(Comment c in Comments)
+            {
+                sb.AppendLine(c.Text);
+            }
+
+            return sb.ToString();
         }
     }
 }

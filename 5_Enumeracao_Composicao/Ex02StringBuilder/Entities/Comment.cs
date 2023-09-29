@@ -16,5 +16,6 @@ namespace Ex02StringBuilder.Entities
         {
             Text = text;
         }
+
     }
 }
