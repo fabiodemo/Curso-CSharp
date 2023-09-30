@@ -11,5 +11,13 @@ namespace Ex03Orders.Entities
     {
         public DateTime Moment { get; set; }
         public OrderStatus OrderStatus { get; set; }
+
+        public Order() { }
+
+        public Order(DateTime moment, OrderStatus orderStatus)
+        {
+            Moment = moment;
+            OrderStatus = orderStatus;
+        }
     }
 }
