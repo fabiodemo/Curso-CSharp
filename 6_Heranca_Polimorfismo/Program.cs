@@ -1,4 +1,4 @@
-﻿namespace _4_Topicos_Especiais
+﻿namespace HerancaPolimorfismo
 {
     internal class Program
     {
