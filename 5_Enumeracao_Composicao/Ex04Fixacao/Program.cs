@@ -1,4 +1,10 @@
-﻿namespace Ex04Fixacao
+﻿using System;
+using System.Globalization;
+using Ex04Fixacao.Entities;
+using Ex04Fixacao.Entities.Enums;
+using Ex04Fixacao.Entities.Enums;
+
+namespace Ex04Fixacao
 {
     internal class Program
     {
@@ -7,61 +13,62 @@
             // Client Data
             Console.WriteLine("Enter cliente data:");
             Console.Write("Name: ");
-            string name = Console.ReadLine();
+            string clientName = Console.ReadLine();
 
             Console.Write("Email: ");
             string email = Console.ReadLine();
 
             Console.Write("Birth date (DD/MM/YYYY): ");
-            string birthDate = Console.ReadLine();
+            DateTime birthDate = DateTime.Parse(Console.ReadLine());
 
             // Order Data
             Console.WriteLine("Enter order data:");
             Console.Write("Status: ");
-            string status = Console.ReadLine();
+            OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
+
+            Client client = new Client(clientName, email, birthDate);
+            Order order = new Order(DateTime.Now, status, client);
 
             Console.Write("How many items to this order? ");
             int itemsCount = int.Parse(Console.ReadLine());
 
-            // Assuming we only handle up to 2 items for simplicity
-            string[] productNames = new string[itemsCount];
-            decimal[] productPrices = new decimal[itemsCount];
-            int[] quantities = new int[itemsCount];
-            decimal[] subtotals = new decimal[itemsCount];
-            decimal total = 0;
 
             for (int i = 0; i < itemsCount; i++)
             {
                 Console.WriteLine($"Enter #{i + 1} item data:");
                 Console.Write("Product name: ");
-                productNames[i] = Console.ReadLine();
+                string productName = Console.ReadLine();
 
                 Console.Write("Product price: ");
-                productPrices[i] = decimal.Parse(Console.ReadLine());
+                double productPrice= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                Product product = new Product(productName, productPrice);
 
                 Console.Write("Quantity: ");
-                quantities[i] = int.Parse(Console.ReadLine());
+                int quantity = int.Parse(Console.ReadLine());
 
-                // Calculate subtotal
-                subtotals[i] = productPrices[i] * quantities[i];
+                OrderItem orderItem = new OrderItem(quantity, productPrice, product);
 
-                // Add to total
-                total += subtotals[i];
+                order.AddItem(orderItem);
             }
 
             // Output Order Summary
-            Console.WriteLine("\nORDER SUMMARY:");
-            Console.WriteLine($"Order moment: {DateTime.Now:dd/MM/yyyy HH:mm:ss}");
-            Console.WriteLine($"Order status: {status}");
-            Console.WriteLine($"Client: {name} ({birthDate}) - {email}");
+            //Console.WriteLine("\nORDER SUMMARY:");
+            //Console.WriteLine($"Order moment: {DateTime.Now:dd/MM/yyyy HH:mm:ss}");
+            //Console.WriteLine($"Order status: {status}");
+            //Console.WriteLine($"Client: {name} ({birthDate}) - {email}");
 
-            for (int i = 0; i < itemsCount; i++)
-            {
-                Console.WriteLine($"Order items:");
-                Console.WriteLine($"{productNames[i]}, ${productPrices[i]:0.00}, Quantity: {quantities[i]}, Subtotal: ${subtotals[i]:0.00}");
-            }
+            //for (int i = 0; i < itemsCount; i++)
+            //{
+            //    Console.WriteLine($"Order items:");
+            //    Console.WriteLine($"{productNames[i]}, ${productPrices[i]:0.00}, Quantity: {quantities[i]}, Subtotal: ${subtotals[i]:0.00}");
+            //}
 
-            Console.WriteLine($"Total price: ${total:0.00}");
+            //Console.WriteLine($"Total price: ${total:0.00}");
+            Console.WriteLine();
+            Console.WriteLine("ORDER SUMMARY: ");
+            Console.WriteLine(order);
+
         }
     }
 }
