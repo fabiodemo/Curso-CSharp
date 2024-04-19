@@ -19,9 +19,9 @@ namespace Ex02.Entities
             Price = price;
         }
 
-        public string PriceTag()
+        public virtual string PriceTag()
         {
-            return "sus";
+            return $"{Name} - $ {Price}";
         }
     }
 }

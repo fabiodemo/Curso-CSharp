@@ -25,14 +25,14 @@ namespace Ex02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How many products?");
+            Console.Write("How many products? ");
             int n = int.Parse(Console.ReadLine());
             List<Product> products = new List<Product>();
 
             for(int i = 0; i < n; i++)
             {
-                Console.WriteLine($"Product #{i} Data:");
-                Console.WriteLine("Common, used or imported (c/u/i)?");
+                Console.Write($"Product #{i} Data: ");
+                Console.Write("Common, used or imported (c/u/i)? ");
                 char type = char.Parse(Console.ReadLine());
                 Console.Write("Name: ");
                 string name = Console.ReadLine();
@@ -59,6 +59,10 @@ namespace Ex02
             
             Console.WriteLine("");
             Console.WriteLine("PRICE TAGS:");
+            foreach(Product prod in products)
+            {
+                Console.WriteLine(prod.PriceTag());
+            }
 
         }
     }

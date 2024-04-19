@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,22 +9,30 @@ namespace Ex02.Entities
 {
     class ImportedProduct : Product
     {
-        public double CustomFees { get; set; }
+        public double CustomsFees { get; set; }
 
         public ImportedProduct() { }
 
-        public ImportedProduct(string name, double price, double customFees) : base(name, price)
+        public ImportedProduct(string name, double price, double customsFees) : base(name, price)
         {
             Name = name;
             Price = price;
-            CustomFees = customFees;
+            CustomsFees = customsFees;
         }
 
-        public string PriceTag()
+        double TotalPrice()
         {
-            return "sus";
+            return Price + CustomsFees;
         }
 
-
+        public override String PriceTag()
+        {
+            return Name
+                + " $ "
+                + TotalPrice().ToString("F2", CultureInfo.InvariantCulture)
+                + " (Customs fee: $ "
+                + CustomsFees.ToString("F2", CultureInfo.InvariantCulture)
+                + ")";
+        }
     }
 }
