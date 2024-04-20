@@ -1,4 +1,4 @@
-﻿namespace Course.Entities
+﻿namespace AbstractClass.Entities
 {
     class BusinessAccount : Account
     {
